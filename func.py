@@ -2,7 +2,7 @@ from PIL import Image, ImageFont, ImageDraw
 import os
 
 def do_ad(string_to_print):
-    file_path = 'D:\Code\Bots\BotAds\sample.jpg'
+    file_path = 'Path-To-Sample'
 
     my_img = Image.open(file_path)
 
@@ -27,6 +27,6 @@ def do_ad(string_to_print):
         to_show += string_to_print[i]
 
     draw.text((width - (width*0.98), heigth - (heigth*0.95)), to_show,(0,0,0),font=font)
-    path_out = 'D:\Code\Bots\BotAds\out.jpg'
+    path_out = 'Path-To-OutImg'
     my_img.save(path_out)
     return path_out
