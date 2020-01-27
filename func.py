@@ -11,7 +11,7 @@ def do_ad(string_to_print):
     size = my_img.size
     width = size[0]
     heigth = size[1]
-    font = ImageFont.truetype("calibriz.ttf", 42)
+    font = ImageFont.truetype("calibriz.ttf", 36)
     to_show = ' '
 
     check = True
@@ -26,7 +26,7 @@ def do_ad(string_to_print):
         
         to_show += string_to_print[i]
 
-    draw.text((width - (width*0.98), heigth - (heigth*0.95)), to_show,(0,0,0),font=font)
+    draw.text((width - (width*0.85), heigth - (heigth*0.95)), to_show,(0,0,0),font=font)
     path_out = 'Path-To-OutImg'
     my_img.save(path_out)
     return path_out
